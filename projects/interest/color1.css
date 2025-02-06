@@ -6,7 +6,9 @@ body {
 
 }
 
-
+.blue {
+    color:blue
+}
 .emp{
     color: black
 }
