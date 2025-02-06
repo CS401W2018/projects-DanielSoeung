@@ -1,0 +1,27 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(205 199 225);
+    font-size: larger;
+    color: rgb(64 61 74)
+
+}
+
+
+.emp{
+    color: black
+}
+
+.demp {
+    color:rgb(109 90 168)
+}
+#ital {
+    font-style: italic;
+}
+
+.span {
+    text-decoration: underline;
+}
+
+.span1 {
+    font-style: oblique;
+}
