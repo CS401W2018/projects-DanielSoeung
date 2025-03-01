@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: grey;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.item{
+    background-color: lightblue;
+    padding: 5px 10px;
+    width: 100px;
+
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 5px;
+
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    border: 2px solid black;
+    margin-bottom: 0px;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+

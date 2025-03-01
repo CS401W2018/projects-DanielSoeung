@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite
+}
+
+.ma{
+    display: flex;
+    margin-top: 10px;
+}
+.ma aside{
+    width: 30%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.item{
+    margin-top: 10px;
+    display: block;
+    background-color: aqua;
+    padding: 10px 20px;
+}
+
+.ma main{
+    flex-wrap: wrap;
+    margin-left: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.profilecard {
+    margin: 5px 5px 5px;
+    width: 30%;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+}
+
+.profilecard img{
+    width: 100%;
+}
+
+.linkcontainer{
+    text-align: center;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
