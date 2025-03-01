@@ -27,11 +27,12 @@ nav{
 }
 
 .ma main{
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     margin-left: 10px;
     width: 70%;
-    display: flex;
-    flex-direction: row;
+
 
 }
 
