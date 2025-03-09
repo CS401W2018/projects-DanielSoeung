@@ -78,7 +78,7 @@ aside img{
 
     .container{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     header{
         background-color: aquamarine;
