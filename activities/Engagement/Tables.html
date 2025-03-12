@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Tables.css">
+    <title>CS 140</title>
 </head>
 <body>
     <header><h1>Web Design</h1></header>
     <nav></nav>
     <main>
-        <table border="1">
+        <table class="schedule">
+            <caption>Class Schedule</caption>
             <thead>
                 <tr>
                     <th> Department </th>
@@ -41,10 +43,10 @@
                     </tr>
                 </tr>
             </tbody>
+            <tr>
+                <td colspan="5"> Spring 2025</td>
+            </tr>
             <tfoot>
-                <tr>
-                    <td colspan="5"> Spring 2025</td>
-                </tr>
                 <tr>
                     <th colspan="4">Total Credits</th>
                     <td header="total-credits">15</td>
@@ -57,6 +59,10 @@
         <p> You should  not use a table to layout elements for your page. </p>
         <h2> When do you need to do extra work for table accessibility? </h2>
         <p> When you want the view to know what they're viewing. For example you can give a cell a label so it stays connected together.</p>
+        <h2>Why don't we use the border attribute?</h2>
+        <p> Using an attrubute this like mean that there is a possibility that it will override your CSS.</p>
+        <h2>What is the easiest way to color every other row a different color?</h2>
+        <p> To be able to color every other row you can use psuedo code like tr:nth-child(odd) to be able to highlight specific cells in your table.</p>
     </main>
     <footer>
         <p>&copy;Daniel Soeung 2025</p>
