@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(100, 163, 218);
+    padding: 7px;
+    margin-bottom: 10px;
+}
+header h1{
+    text-align: center;
+}
+
+.schedule{
+    border: thin solid black;
+    box-shadow: 3px 3px 3px rgba(30,30,30,0.5);
+    border-radius: 2px;
+    border-spacing: 1px;
+    border-collapse: collapse;
+    caption-side: top;
+}
+caption{
+    font-style: italic;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+nav a{
+    padding: 8px 30px;
+    display: block;
+    background-color: skyblue;
+    border: thin solid black;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+nav a:hover{
+    background-color: lightgrey;
+    font-weight: bold;
+}
+.schedule th, .schedule td{
+    text-align: center;
+    border: thin solid black;
+    padding: 30px 80px;
+    vertical-align: top;
+}
+
+.schedule thead tr{
+    background-color: rgb(22, 56, 206);
+    color: rgb(255, 255, 255);
+}
+
+tbody td{
+    font-size: large;
+}
+.schedule tfoot tr {
+    background-color: rgb(22, 56, 206);
+    color: rgb(252, 252, 252);
+}
+
+.schedule tbody tr:nth-child(odd){
+    background-color: lightslategray;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+}
+
+.container aside{
+    width: 20%;
+}
