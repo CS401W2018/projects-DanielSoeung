@@ -10,32 +10,46 @@
     <header><h1>Web Design</h1></header>
     <main>
         <form action="processing.html" method="get">
-            <div class="form-row">
-                <label for="firstname">First Name: </label>
-                <input type="text" required= "required" name="firstname" placeholder="First Name" id="firstname">
-            </div>
-            <div class="form-row">
-                <label for="email">Email: </label>
-                <input type="text" name="email" id="email">
-            </div>
-            <div>
-                <label for="pass"> Password:</label>
-                <input type="password" name="password" id="pass">
-            </div>
-            <div>
-                <label for="state">States</label>
-                <select name="state" id="state">
-                    <option value="blank"></option>
-                    <option value="CO"> Colorado</option>
-                    <option value="UT"> Utah</option>
-                    <option value="HI"> Hawaii</option>
-                </select>
-            </div>
-            <div>
-                <label for="year">Year in School</label>
-                <input type="radio" name="year" value="Freshmen"> Freshmen
-            </div>
-            <input type="submit">
+            <fieldset>
+                <div class="form-row">
+                    <label for="firstname">First Name: </label>
+                    <input type="text" required= "required" name="firstname" placeholder="First Name" id="firstname">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass"> Password:</label>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">States</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CO"> Colorado</option>
+                        <option value="UT"> Utah</option>
+                        <option value="HI"> Hawaii</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" value="Freshmen"> Freshmen</label>
+                    <label><input type="radio" name="year" value="Sophmore"> Sophmore</label>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked>Remember me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                        <input type="submit">
+                </div>
+            </fieldset>
         </form>
 
     <h2>The form tag has an "action" attribute. What does it do?</h2>
@@ -44,6 +58,10 @@
     <p> Method is what you want to the form to do. You want it to POST the data or GET the data.</p>
     <h2>What is the difference between a "POST" and a "GET"?</h2>
     <p> POST is when you are changing data on the webiste and GET is when you need it to read your input.</p>
+    <h2>What are different ways to style your form?</h2>
+    <p> You can use float, grid and flex.</p>
+    <h2>Why does the professor like to use flex?</h2>
+    <p>Flex allows for the website to look great for both desktop and mobile devices</p>
     </main>
     <footer>
         <p>&copy;Daniel Seung 2025</p>
