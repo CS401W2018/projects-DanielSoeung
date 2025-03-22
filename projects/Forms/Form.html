@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+    <title>CS 140</title>
+</head>
+<body>
+    <header><h1>League of Legends</h1></header>
+    <main>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <form action="processing.html" method="post">
+                <div class="form-row">
+                    <label for="firstname">First Name:</label> <input type="text" name="firstname" id="firstname">
+                </div>
+                <div class="form-row">
+                    <label for="secondname">Last Name: </label> <input type="text" name="lastname" id="lastname">
+                </div>
+                <div class="form-row">
+                    <label for="secondname">Username: </label> <input type="text" name="" id="username">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label> <input type="email" name="email" placeholder="example@gmail.com">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password: </label> <input type="password" name="password" id="password">
+                </div>
+                <div class="check-row">
+                    <div class="spacer">Account type:</div>
+                    <label><input type="radio" name="class" value="newplayer">New Player</label>
+                    <label><input type="radio" name="class" value="returning">Returning</label> 
+                </div>               
+                <div class="form-row">
+                    <label for="dateInput">Birthdate: </label>
+                    <input type="date" name="birthdate" id="dateInput">
+                </div>
+                <div class="form-row">
+                    <label for="country region">Country Region: </label>
+                    <select name="state" id="password">
+                        <option value="none" selected></option>
+                        <option value="A">Asia</option>
+                        <option value= "P">Polynesia</option>
+                        <option value="NA">North America</option>
+                        <option value="SA">South America</option>
+                        <option value="EU">Europe</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Favorite Animal: </label>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox">I agree to the terms</label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign up now">
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    
+</body>
+</html>
