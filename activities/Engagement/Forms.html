@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Form.css">
+    <link rel="stylesheet" href="Forms.css">
     <title>CS 140</title>
 </head>
 <body>
-    <header><h1>League of Legends</h1></header>
+    <header><h1>Forms</h1></header>
     <main>
         <fieldset>
             <legend>Welcome</legend>
-            <form action="processing.html" method="post">
+            <form action="processing.html" method="get" id="myForm">
                 <div class="form-row">
                     <label for="firstname">First Name:</label> <input type="text" name="firstname" id="firstname">
                 </div>
@@ -27,14 +27,8 @@
                 <div class="form-row">
                     <label for="password">Password: </label> <input type="password" name="password" id="password">
                 </div>
-                <div class="check-row">
-                    <div class="spacer">Account type:</div>
-                    <label><input type="radio" name="class" value="newplayer">New Player</label>
-                    <label><input type="radio" name="class" value="returning">Returning</label> 
-                </div>               
                 <div class="form-row">
-                    <label for="dateInput">Birthdate: </label>
-                    <input type="date" name="birthdate" id="dateInput">
+                    <label for="password">Age: </label> <input type="age" name="age" id="age">
                 </div>
                 <div class="form-row">
                     <label for="countryregion">Country Region: </label>
@@ -61,6 +55,38 @@
                 </div>
             </form>
         </fieldset>
+        <h1>Questions</h1>
+        <h3>What is JavaScript? How did it get its name?</h3>
+        <p> Javascript is a programming language. It got its name because the makers of Netscape wanted to implement Java into their web server code.</p>
+        <h3>What are the two ways you can run JavaScript?</h3>
+        <ol>
+            <li> In the DOM</li>
+            <li> Nodejs</li>
+        </ol>
+        <h3>What was the most popular front-end js library?</h3>
+        <p>hQuery library</p>
+        <h3>What is the most popular front-end js library today?</h3>
+        <p> React.js</p>
     </main>
+    <footer>&copy;Daniel Soeung 2025</footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+            alert('Form Submitted');
+
+            const firstname = document.getElementById('firstname').value;
+            const secondname = document.getElementById('secondname').value;
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const countryregion = document.getElementById('countryregion').value;
+            console.log(firstname);
+            console.log(secondname);
+            console.log(username);
+            console.log(email);
+            console.log(countryregion);
+        });
+        
+    </script>
+    
 </body>
 </html>
