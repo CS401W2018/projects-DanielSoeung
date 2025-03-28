@@ -67,30 +67,16 @@
         <p>hQuery library</p>
         <h3>What is the most popular front-end js library today?</h3>
         <p> React.js</p>
+        <h3>What is AJAX?</h3>
+        <p> Allows you to collect data and send it to the serve without having to fully refresh the page.</p>
+        <h3>Why do you put your JS Code in a separate file?</h3>
+        <p><ol>
+            <li> Load faster</li>
+            <li> Can be used for multiple files</li>
+        </ol></p>
     </main>
     <footer>&copy;Daniel Soeung 2025</footer>
-    <script>
-        document.getElementById('myForm').addEventListener('submit',function(event){
-            event.preventDefault();
-            alert('Form Submitted');
-
-            const firstname = document.getElementById('firstname').value;
-            const secondname = document.getElementById('secondname').value;
-            const username = document.getElementById('username').value;
-            const email = document.getElementById('email').value;
-            const countryregion = document.getElementById('countryregion').value;
-            console.log(firstname);
-            console.log(secondname);
-            console.log(username);
-            console.log(email);
-            console.log(countryregion);
-
-            if (!firstname) {
-                alert("Yoy need to enter your name");
-                return;
-            }
-        });
-        
+    <script src="Forms.js">  
     </script>
     
 </body>
