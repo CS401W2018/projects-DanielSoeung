@@ -9,31 +9,36 @@
 <body>
     <header><h1>Forms</h1></header>
     <main>
+        <div id="message"></div>
         <fieldset>
             <legend>Welcome</legend>
             <form action="processing.html" method="get" id="myForm">
                 <div class="form-row">
-                    <label for="firstname">First Name:</label> <input type="text" name="firstname" id="firstname">
+                    <label for="firstname">First Name:</label> <input type="text" name="first" id="firstname">
                 </div>
                 <div class="form-row">
-                    <label for="secondname">Last Name: </label> <input type="text" name="secondname" id="secondname">
-                </div>
-                <div class="form-row">
-                    <label for="username">Username: </label> <input type="text" name="username" id="username">
-                </div>
-                <div class="form-row">
-                    <label for="email">Email: </label> <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    <label for="lastname">Last Name: </label> <input type="text" name="last" id="lastname">
                 </div>
                 <div class="form-row">
                     <label for="password">Password: </label> <input type="password" name="password" id="password">
                 </div>
-                <div class="form-row">
-                    <label for="password">Age: </label> <input type="age" name="age" id="age">
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" name="remember" checked id="remember"> Remember Me</label>
                 </div>
+                <div class="form-row">
+                    <label>Age: </label> <input type="number" name="age" id="age">
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" value="Freshmen"> Freshmen</label>
+                    <label><input type="radio" name="year" value="Sophmore"> Sophmore</label>
+                    <label><input type="radio" name="year" value="Sophmore"> Senior</label>
+                </div>  
                 <div class="form-row">
                     <label for="countryregion">Country Region: </label>
                     <select name="countryregion" id="countryregion">
-                        <option value="none" selected>Not Selected</option>
+                        <option value="blank" disabled selected>Not Selected</option>
                         <option value="A">Asia</option>
                         <option value= "P">Polynesia</option>
                         <option value="NA">North America</option>
@@ -41,13 +46,9 @@
                         <option value="EU">Europe</option>
                     </select>
                 </div>
-                <div class="form-row">
-                    <label for="comment">Favorite Animal: </label>
-                    <textarea name="comment" id="comment"></textarea>
-                </div>
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label><input type="checkbox">I agree to the terms</label>
+                    <label><input type="checkbox" checked id="terms">I agree to the terms</label>
                 </div>
                 <div class="form-row">
                     <div class="spacer"></div>
@@ -55,29 +56,9 @@
                 </div>
             </form>
         </fieldset>
-        <h1>Questions</h1>
-        <h3>What is JavaScript? How did it get its name?</h3>
-        <p> Javascript is a programming language. It got its name because the makers of Netscape wanted to implement Java into their web server code.</p>
-        <h3>What are the two ways you can run JavaScript?</h3>
-        <ol>
-            <li> In the DOM</li>
-            <li> Nodejs</li>
-        </ol>
-        <h3>What was the most popular front-end js library?</h3>
-        <p>hQuery library</p>
-        <h3>What is the most popular front-end js library today?</h3>
-        <p> React.js</p>
-        <h3>What is AJAX?</h3>
-        <p> Allows you to collect data and send it to the serve without having to fully refresh the page.</p>
-        <h3>Why do you put your JS Code in a separate file?</h3>
-        <p><ol>
-            <li> Load faster</li>
-            <li> Can be used for multiple files</li>
-        </ol></p>
     </main>
     <footer>&copy;Daniel Soeung 2025</footer>
-    <script src="Forms.js">  
-    </script>
+    <script src="Forms.js"></script>
     
 </body>
 </html>

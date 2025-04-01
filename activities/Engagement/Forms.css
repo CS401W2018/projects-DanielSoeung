@@ -21,6 +21,12 @@ header h1{
     text-align: right;
 }
 
+.radio-row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
 .spacer {
     width: 150px;
     text-align: right;
@@ -61,6 +67,8 @@ input:hover[type='submit'] {
     background-color: rgb(120, 30, 204);
     border-radius: 4px;
 }
+
+
 
 fieldset {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);

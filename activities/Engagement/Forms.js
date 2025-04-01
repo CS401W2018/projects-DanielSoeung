@@ -1,35 +1,48 @@
-document.getElementById('myForm').addEventListener('submit',function(event){
+document.getElementById("myForm").addEventListener("submit", function(event) {
     event.preventDefault();
-    alert('Form Submitted');
+    const first = document.getElementById("firstname").value;
+    const last = document.getElementById("lastname").value;
+    const age = document.getElementById("age").value;
+    const password = document.getElementById("password").value;
 
-    
+    if (!first || !last) {
+        alert("Please provide your name.")
+        return;
+    }
 
-    const formData = {
-        firstname: firstname,
-        secondname: secondname,
-        username: document.getElementById('username').value,
-        password: document.getElementById('password').value,
-        countryregion: document.getElementById('countryregion').value,
+    if (!age || age < 18) {
+        alert("You need to be 18 to submit.")
+        return;
+    }
+
+    if (!password) {
+        alert("Please enter a password.")
+        return;
+    }
 
 
+    const data = {
+        firstname: first,
+        lastname: last,
+        age: age,
+        password: password
     }
 
 
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", 'subtmit.json', true);
-    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.open("GET", "submit.json", true);
     xhr.onreadystatechange = function () {
-        if (xhr.readyState == 4 && xhr.status == 200) {
-            alert('Form submitted sucessfully.') {
-                alert('Error submitting form.');
-            }
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            const response = JSON.parse(xhr.responseText);
+            document.getElementById("message").innerHTML = response.message;
+            document.getElementById("myForm").innerHTML = "";
+            return;
+        
+        } else if (xhr.readyState === 4) {
+            alert("Error submitting form.");
         }
     };
-    xhr.send(JSON.stringify(formData));
-    alert('Success: ${}')
-
-    if (!firstname) {
-        alert("Yoy need to enter your name");
-        return;
-    }
+    xhr.send(JSON.stringify(data));
+    console.log(data);
 });
+
