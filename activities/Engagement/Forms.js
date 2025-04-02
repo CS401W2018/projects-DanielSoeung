@@ -21,6 +21,7 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     }
 
 
+
     const data = {
         firstname: first,
         lastname: last,
