@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final CS 140</title>
+    <link rel="stylesheet" href="Css.css" media="screen">
+</head>
+<body>
+    <header><h1>World Cup</h1></header>
+    <nav>
+        <a href="Home.html" >Home</a>
+        <a href="Worldcup.html">Worldcup</a>
+        <a href="Hosts.html">Hosts Countries</a>
+        <a href="Legends.html">Legends</a>
+        <a href="Choose.html">Top Teams</a>
+        <a href="You.html" class="active">Get to know you</a>
+    </nav>
+    <main>
+        <div id="message"></div>
+        <fieldset>
+            <legend>Who is the Goat?</legend>
+            <form action="processing.html" method="get" id="myForm">
+                <div class="form-row">
+                    <label for="firstname">First Name:</label> <input type="text" name="firstname" id="firstname" required>
+                </div>
+                <div class="form-row">
+                    <label for="firstname">Last Name:</label> <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label> <input type="number" name="age" id="age" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label> <input type="email" name="email" id="email" required>
+                </div class="form-row">
+                <div class="radio-row">
+                    <div class="spacer"> Ronaldo or Messi?</div>
+                    <label><input type="radio" name="choice" value="Ronaldo" required>Ronaldo</label>
+                    <label><input type="radio" name="choice" value="Messi" required>Messi</label>
+                </div>
+                <div class="radio-row">
+                    <div class="spacer"> Country </div>
+                    <label><input type="radio" name="country" value="Portugal" required>Portugal</label>
+                    <label><input type="radio" name="country" value="Argentina" required>Argentina</label>
+                </div>
+                <div class="radio-row">
+                    <div class="spacer"></div>
+                    <label><input type="checkbox" id="checked" required>I agree to submit</label>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit" value="Sign up now" required>
+                </div>
+            </form>
+        </fieldset>
+        <div class="playercard">
+            <figure>
+                <img src="../Revised Final/Pictures/RonaldoC.jpg" alt="Ronaldo">
+            </figure>
+            <p> Cristiano Ronaldo</p>
+        </div>
+        <h2> More About</h2>
+        <p> This is Cristiano Ronaldo a Portugese soccer player. Born in 1985 in Funchal, Ronald grew to become a great in sport showcasing great technical skill. One of his most iconic moves was during his time in Manchester City playing again Spurs. He took the ball on the wing and began to put on a performance where his feet was dancing around the ball leaving the whole crowd shocked and amazed. Among his greatest acheivements Ronaldo is a five time Ballon d’Or winner. The award is given to the some of the best players based on your skills and sportmanship on the field. He made a name for himself through his display of hardwork and amazing technical skill. Another noteable achievement to hightlight was his ability to perform on freekicks. One that is refered to him often is called the "kuckleball". Ronaldo used this technique by contacting the ball in a particular spot that allowed the ball to displace itself in the air due to the lack of spin which then creates unpredictable movements to throw of the keeper inside the goal.</p>
+        <h2> Early Life </h2>
+        <p> Ronald began playing soccer at a young age. However, at the age of 15 Ronaldo was diagonsed with a heart condition that limited his ability to play, but he soon recovered and continued his football journey. One of th earliest clubs Ronaldo played for was Sporting Libson where he played for several games before promoting to the senior team. From here Ronald started to gain attention from clubs abroad due to his amazing talent and skill with the ball. </p>
+        <div class="playercard">
+            <figure>
+                <img src="../Revised Final/Pictures/Messi.jpg" alt="Ronaldo">
+            </figure>
+            <p> Messi </p>
+        </div>
+        <h2> More About</h2>
+        <p> Lionel Messi was bro non June 24th 1987 in Rosario Argentina. Messi has grew into a fan favorite through his style of play on the field. Many remember him as the player who can dribble past any player in the world. Messi is one of the top players in the world. Through his career he has obtained over 7 Ballon D'Or awards setting the record for the highest ever to recieve.</p>
+        <h2> Early Life</h2>
+        <p> Messi started playing football as a young boy first joing the Newell's Old Boys team in Argentina. From there his family soon moved to Spain where he tried out for the Barcelona U14. Despite his small size Messi impressed the club and soon gain a spot to play on the senior team. Where he would lead the team to win many Laliga championships</p>
+    </main>
+    <script src="Forms.js"></script>
+</body>
+</html>

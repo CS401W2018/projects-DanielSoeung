@@ -1,0 +1,20 @@
+
+
+
+.itema{
+    grid-area: main3;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: auto 200px;
+    gap: 10px;
+    grid-template-areas: 
+    "header1 header2 header3"
+    "main1 main2 main3";
+}
+
+.item{
+    background-color: aquamarine;
+}
