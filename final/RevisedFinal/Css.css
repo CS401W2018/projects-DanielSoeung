@@ -30,6 +30,10 @@ nav a:hover{
     background-color: goldenrod;
 }
 
+.clear {
+    clear: both;
+}
+
 /* World Cup Page */
 .trophycard{
     border: thin solid black;
