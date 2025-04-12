@@ -155,6 +155,7 @@ td img{
 
 .container {
     display: flex;
+    justify-content: center;
 }
 
 /* You Page */
@@ -283,12 +284,17 @@ fieldset img{
 }
 
 .crop{
-    width: 30%;
+    width: 100%;
     
 }
 .divide{
     display: flex;
 }
+
+.divide figure{
+    width: 20%;
+}
+
 
 
 

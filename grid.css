@@ -1,0 +1,25 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 100px; /* <--- right here */
+    gap: 10px;
+    grid-template-areas: 
+        "header1 header2 header3 header4"
+        "main1 main2 main3 main4";
+}
+
+
+.block {
+    align-self: start;
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.item1{
+    grid-area: main4;
+}
+
