@@ -211,4 +211,17 @@ td img{
         margin-right: auto;
     }
 
+    .flags {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flags img {
+        margin-left: 50px;
+    }
+
+.schedule th, .schedule td {
+    padding: 10px 15px;
+}
+
 }
